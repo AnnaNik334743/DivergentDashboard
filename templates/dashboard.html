@@ -1,0 +1,96 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+
+<!--    <style>-->
+
+
+<!--.row {-->
+<!--  display: flex;-->
+<!--}-->
+
+<!--.inner-row {-->
+<!--  flex: 50%;-->
+<!--  padding: 10px;-->
+<!--}-->
+
+<!--.column {-->
+<!--  flex: 50%;-->
+<!--  padding: 10px;-->
+<!--}-->
+<!--</style>-->
+
+<!--</head>-->
+<!--<body>-->
+
+<!--<h2>Two Equal Columns</h2>-->
+
+<!--<div class="row">-->
+<!--    <div class="column" style="background-color:#aaa;">-->
+<!--        <p>Some text..</p>-->
+<!--        <div class="inner-row">-->
+<!--            <p>Cringe1</p>-->
+<!--        </div>-->
+<!--        <div class="inner-row">-->
+<!--            <p>Cringe2</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="column" style="background-color:#bbb;">-->
+
+<!--    </div>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<div class="container">
+    <div class="column">
+        <div class="upper-row">
+            <div class="heading"><a href="https://en.wikipedia.org/wiki/Divergent_(novel)" style="color: black; text-decoration: none;"
+                                    target="_blank">
+                Divergent Book I Main Characters Information</a></div>
+        </div>
+        <div class="upper-row">
+            <form action= "{{ url_for('dashboard') }}" method="POST">
+                <select name=characters>
+                    {% for character in characters %}
+                        {% if character == name %}
+                            <option value="{{ character }}" selected='selected'>{{ character }}</option>
+                        {% else %}
+                            <option value="{{ character }}" >{{ character }}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+                <input type="submit" value="Choose the character" />
+            </form>
+        </div>
+
+        <div class="lower-row">
+
+            <div class="lower-row-text">
+                <p>{{ description }}</p>
+            </div>
+
+            <div class="lower-row-image">
+                <img src="{{ image_path }}" alt="Character Image">
+            </div>
+
+        </div>
+        <div class="lower-row">
+            {% include html_file1 %}
+        </div>
+    </div>
+    <div class="column">
+            {% include html_file2 %}
+    </div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+pandas=1.5.3
+numpy=1.24.3
+spacy=3.4.4
+spacy-experimental=0.6.2
+matplotlib=3.7.1
+hvplot=0.8.3
+nltk=3.8.1
+networkx=3.1
+Flask=2.3.2
+scikit-image=0.20.0
+wordcloud=1.9.2
+ipython=8.13.2
+pyvis=0.3.2
+https://github.com/explosion/spacy-experimental/releases/download/v0.6.1/en_coreference_web_trf-3.4.0a2-py3-none-any.whl
