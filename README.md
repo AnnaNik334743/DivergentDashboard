@@ -1,3 +1,4 @@
 Дашборд по персонажам первой книги трилогии "Дивергент" Вероники Рот. Дашборд выглядит так. Заголовок кликабельный. Почитать в деталях о том, что происходит, можно в блокноте data_aggregation.
-![image](https://github.com/AnnaNik334743/DivergentDashboard/assets/90194307/6d461750-46a0-4e3a-b9b3-5a7837ffe333)
+![image](https://github.com/AnnaNik334743/DivergentDashboard/assets/90194307/b016c756-749e-4c6c-a129-c29e9d648a85)
+
 
